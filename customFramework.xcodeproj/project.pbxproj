@@ -10,6 +10,8 @@
 		A210194525AADAA400F82F5A /* customFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A210193B25AADAA400F82F5A /* customFramework.framework */; };
 		A210194A25AADAA400F82F5A /* customFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210194925AADAA400F82F5A /* customFrameworkTests.swift */; };
 		A210194C25AADAA400F82F5A /* customFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A210193E25AADAA400F82F5A /* customFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A210195825AADAAF00F82F5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210195725AADAAF00F82F5A /* User.swift */; };
+		A210195C25AADAC700F82F5A /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210195B25AADAC700F82F5A /* Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		A210194425AADAA400F82F5A /* customFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A210194925AADAA400F82F5A /* customFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFrameworkTests.swift; sourceTree = "<group>"; };
 		A210194B25AADAA400F82F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A210195725AADAAF00F82F5A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A210195B25AADAC700F82F5A /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 		A210193125AADAA400F82F5A = {
 			isa = PBXGroup;
 			children = (
+				A210195B25AADAC700F82F5A /* Math.swift */,
+				A210195725AADAAF00F82F5A /* User.swift */,
 				A210193D25AADAA400F82F5A /* customFramework */,
 				A210194825AADAA400F82F5A /* customFrameworkTests */,
 				A210193C25AADAA400F82F5A /* Products */,
@@ -147,6 +153,7 @@
 				TargetAttributes = {
 					A210193A25AADAA400F82F5A = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					A210194325AADAA400F82F5A = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A210195825AADAAF00F82F5A /* User.swift in Sources */,
+				A210195C25AADAC700F82F5A /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		A210195025AADAA400F82F5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 42U8HC3WSH;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = GPProjects.customFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +376,7 @@
 		A210195125AADAA400F82F5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 42U8HC3WSH;
@@ -389,6 +401,7 @@
 		A210195325AADAA400F82F5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42U8HC3WSH;
 				INFOPLIST_FILE = customFrameworkTests/Info.plist;
@@ -407,6 +420,7 @@
 		A210195425AADAA400F82F5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42U8HC3WSH;
 				INFOPLIST_FILE = customFrameworkTests/Info.plist;
